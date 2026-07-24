@@ -90,15 +90,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
         uploadBtn.addEventListener("click", function () {
 
-            let file = fileName.value.trim();
+            if(fileInput.files.length===0){
 
-            if (file === "") {
-
-                alert("Please enter a file name.");
-
-                return;
-
-            }
+            alert("Please choose a file.");
+        
+            return;
+        
+        }
+        
+        let file=fileInput.files[0].name;
 
             uploadBtn.disabled = true;
 

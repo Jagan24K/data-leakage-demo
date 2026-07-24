@@ -1,5 +1,10 @@
+/* ==================================================
+   DATA LEAKAGE DEMO
+   STYLE.CSS
+================================================== */
+
 /* ===========================
-   GOOGLE FONT
+   GOOGLE FONT & RESET
 =========================== */
 
 *{
@@ -15,9 +20,9 @@
     --primary:#3B82F6;
     --secondary:#06B6D4;
 
-    --bg:#060816;
-    --card:#111827;
-    --card2:#1F2937;
+    --bg:#050816;
+    --surface:#111827;
+    --surface2:#1F2937;
 
     --text:#F8FAFC;
     --text2:#CBD5E1;
@@ -35,35 +40,41 @@ body{
 }
 
 /* ===========================
-   NAVBAR
+ NAVBAR
 =========================== */
 
 .navbar{
 
     padding:18px 0;
-    transition:.4s;
+    transition:.35s;
+    z-index:999;
 
 }
 
 .navbar.scrolled{
 
-    background:rgba(10,15,30,.95);
-    backdrop-filter:blur(18px);
-    box-shadow:0 10px 30px rgba(0,0,0,.3);
+    background:rgba(6,10,22,.9);
+
+    backdrop-filter:blur(15px);
+
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
 
 }
 
 .navbar-brand{
 
-    color:#fff;
     font-size:28px;
+
     font-weight:700;
+
+    color:#fff;
 
 }
 
 .navbar-brand i{
 
     color:var(--secondary);
+
     margin-right:8px;
 
 }
@@ -71,9 +82,12 @@ body{
 .nav-link{
 
     color:#dbeafe;
-    margin-left:18px;
-    font-weight:500;
+
+    margin-left:20px;
+
     transition:.3s;
+
+    font-weight:500;
 
 }
 
@@ -96,11 +110,6 @@ body{
 }
 
 /* ===========================
- HERO
-=========================== */
-
-
-/* ===========================
  BUTTONS
 =========================== */
 
@@ -110,11 +119,11 @@ body{
 
     border:none;
 
-    padding:14px 34px;
-
     border-radius:50px;
 
-    transition:.4s;
+    padding:14px 34px;
+
+    transition:.35s;
 
 }
 
@@ -128,264 +137,161 @@ body{
 
 .btn-outline-light{
 
+    border-radius:50px;
+
     padding:14px 34px;
 
-    border-radius:50px;
-
-}
-
-.btn-outline-light:hover{
-
-    color:#000;
-
 }
 
 /* ===========================
- STATS
-=========================== */
-
-.stats{
-
-    padding:80px 0;
-
-}
-
-.stat-card{
-
-    background:var(--card);
-
-    border:1px solid var(--border);
-
-    border-radius:20px;
-
-    padding:35px;
-
-    text-align:center;
-
-    transition:.4s;
-
-}
-
-.stat-card:hover{
-
-    transform:translateY(-10px);
-
-    border-color:var(--secondary);
-
-    box-shadow:0 20px 40px rgba(0,0,0,.4);
-
-}
-
-.stat-card i{
-
-    font-size:45px;
-
-    color:var(--secondary);
-
-    margin-bottom:20px;
-
-}
-
-.stat-card h3{
-
-    font-size:34px;
-
-    font-weight:700;
-
-}
-
-.stat-card p{
-
-    color:var(--text2);
-
-}
-
-/* ===========================
- SECTION
-=========================== */
-
-section{
-
-    padding:100px 0;
-
-}
-
-.section-title{
-
-    font-size:42px;
-
-    text-align:center;
-
-    font-weight:700;
-
-    margin-bottom:15px;
-
-}
-
-.section-subtitle{
-
-    color:var(--text2);
-
-    text-align:center;
-
-    max-width:700px;
-
-    margin:auto;
-
-    margin-bottom:60px;
-
-}
-
-/* ===========================
- SCROLLBAR
-=========================== */
-
-::-webkit-scrollbar{
-
-    width:10px;
-
-}
-
-::-webkit-scrollbar-thumb{
-
-    background:var(--secondary);
-
-    border-radius:50px;
-
-}
-
-::-webkit-scrollbar-track{
-
-    background:#08101d;
-
-}
-
-/* ===========================
- ANIMATION
-=========================== */
-
-/*=====================================
  HERO
-======================================*/
+=========================== */
 
 .hero{
+
     min-height:100vh;
+
     display:flex;
+
     align-items:center;
+
     position:relative;
+
     overflow:hidden;
+
     padding-top:100px;
+
 }
 
-/* Grid Background */
+/* Background Grid */
 
 .hero-grid{
+
     position:absolute;
+
     inset:0;
 
     background-image:
+
     linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),
+
     linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);
 
     background-size:40px 40px;
+
     opacity:.2;
+
 }
 
 /* Glow */
 
 .glow{
+
     position:absolute;
+
     border-radius:50%;
-    filter:blur(130px);
-    z-index:0;
+
+    filter:blur(120px);
+
 }
 
 .glow1{
+
     width:320px;
+
     height:320px;
+
+    left:-120px;
+
+    top:150px;
+
     background:#2563eb;
-    top:120px;
-    left:-100px;
-    opacity:.18;
+
+    opacity:.2;
+
 }
 
 .glow2{
-    width:300px;
-    height:300px;
-    background:#06b6d4;
-    right:-120px;
-    top:80px;
-    opacity:.18;
-}
 
-/* Keep content above background */
+    width:280px;
+
+    height:280px;
+
+    right:-120px;
+
+    top:60px;
+
+    background:#06b6d4;
+
+    opacity:.18;
+
+}
 
 .hero .container{
+
     position:relative;
+
     z-index:2;
+
 }
 
-/* Badge */
-
 .hero-badge{
+
     display:inline-flex;
+
     align-items:center;
+
     gap:10px;
 
-    background:rgba(255,255,255,.08);
+    background:rgba(255,255,255,.06);
 
-    border:1px solid rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.08);
 
     padding:10px 18px;
 
     border-radius:50px;
 
-    margin-bottom:30px;
+    margin-bottom:25px;
 
-    color:#fff;
 }
 
 .hero-badge i{
-    color:#06b6d4;
-}
 
-/* Heading */
+    color:var(--secondary);
+
+}
 
 .hero h1{
 
-    font-size:60px;
+    font-size:58px;
+
+    line-height:1.15;
 
     font-weight:700;
-
-    line-height:1.1;
-
-    margin-bottom:20px;
 
 }
 
 .hero h1 span{
 
-    color:var(--primary);
-
     display:block;
+
+    color:var(--primary);
 
 }
 
 .hero p{
 
-    color:var(--text2);
-
-    font-size:18px;
-
-    line-height:1.8;
+    margin-top:25px;
 
     margin-bottom:35px;
 
-    max-width:560px;
+    color:var(--text2);
+
+    line-height:1.8;
+
+    font-size:18px;
 
 }
-
-/* Buttons */
 
 .hero-buttons{
 
@@ -397,17 +303,15 @@ section{
 
 }
 
-/* Right Side */
-
 .hero-card{
 
     background:rgba(255,255,255,.04);
 
     border:1px solid rgba(255,255,255,.08);
 
-    backdrop-filter:blur(20px);
+    border-radius:25px;
 
-    border-radius:24px;
+    backdrop-filter:blur(20px);
 
     padding:30px;
 
@@ -417,19 +321,17 @@ section{
 
     align-items:center;
 
-    min-height:480px;
+    min-height:500px;
 
-    box-shadow:0 20px 40px rgba(0,0,0,.35);
+    box-shadow:0 20px 50px rgba(0,0,0,.35);
 
 }
-
-/* Image */
 
 .hero-image{
 
     width:100%;
 
-    max-width:500px;
+    max-width:480px;
 
     display:block;
 
@@ -437,12 +339,124 @@ section{
 
 }
 
-/* Hover */
+/* ===========================
+ STATS
+=========================== */
 
-.hero-card:hover{
+.stats{
 
-    border-color:#3B82F6;
+    padding:70px 0;
+
+}
+
+.stat-card{
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
 
     transition:.35s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--secondary);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+
+}
+
+.stat-card i{
+
+    font-size:42px;
+
+    color:var(--secondary);
+
+    margin-bottom:18px;
+
+}
+
+.stat-card h3{
+
+    font-size:32px;
+
+    font-weight:700;
+
+}
+
+.stat-card p{
+
+    color:var(--text2);
+
+    margin-bottom:0;
+
+}
+
+/* ===========================
+ SECTION
+=========================== */
+
+section{
+
+    padding:90px 0;
+
+}
+
+.section-title{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    text-align:center;
+
+    margin-bottom:12px;
+
+}
+
+.section-subtitle{
+
+    text-align:center;
+
+    max-width:720px;
+
+    margin:auto;
+
+    color:var(--text2);
+
+    margin-bottom:60px;
+
+}
+
+/* ===========================
+ SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#08101d;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--secondary);
+
+    border-radius:20px;
 
 }

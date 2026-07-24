@@ -214,19 +214,41 @@ NAVBAR
 
 .navbar-nav .nav-link{
 
-    color:#CBD5E1;
+    color:#ffffff !important;
 
     margin-left:24px;
 
     font-weight:500;
 
-    transition:.3s;
+    transition:.3s ease;
 
 }
 
 .navbar-nav .nav-link:hover{
 
-    color:#60A5FA;
+    color:#60A5FA !important;
+
+}
+
+.navbar-nav .nav-link.active{
+
+    color:#60A5FA !important;
+
+    background:transparent !important;
+
+}
+
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:active,
+.navbar-nav .nav-link:visited{
+
+    color:#ffffff !important;
+
+    background:transparent !important;
+
+    outline:none;
+
+    box-shadow:none;
 
 }
 

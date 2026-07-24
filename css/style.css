@@ -1355,6 +1355,66 @@ CUSTOM SPACING
 END OF STYLE.CSS
 ==================================================*/
 
+.upload-area{
+
+    border:2px dashed rgba(96,165,250,.5);
+
+    border-radius:20px;
+
+    padding:50px 30px;
+
+    text-align:center;
+
+    background:#0F172A;
+
+    transition:.3s;
+
+}
+
+.upload-area:hover{
+
+    border-color:#60A5FA;
+
+    background:#111827;
+
+}
+
+.upload-area i{
+
+    font-size:60px;
+
+    color:#60A5FA;
+
+    margin-bottom:20px;
+
+}
+
+.upload-area h4{
+
+    margin-bottom:10px;
+
+}
+
+.upload-area p{
+
+    color:#94A3B8;
+
+    margin-bottom:25px;
+
+}
+
+.selected-file{
+
+    margin-top:20px;
+
+    color:#60A5FA;
+
+    font-weight:600;
+
+    word-break:break-word;
+
+}
+
 
 
 

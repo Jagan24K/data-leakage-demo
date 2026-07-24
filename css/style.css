@@ -366,3 +366,189 @@ transform:translateY(0);
 }
 
 }
+
+/*=====================================
+ HERO PREMIUM
+======================================*/
+
+.hero{
+
+    position:relative;
+    overflow:hidden;
+
+}
+
+.hero-grid{
+
+    position:absolute;
+
+    width:100%;
+    height:100%;
+
+    background-image:
+
+    linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),
+
+    linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);
+
+    background-size:40px 40px;
+
+    opacity:.35;
+
+}
+
+/* Floating Glow */
+
+.glow{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(120px);
+
+}
+
+.glow1{
+
+    width:350px;
+
+    height:350px;
+
+    background:#2563eb;
+
+    left:-100px;
+
+    top:150px;
+
+    opacity:.30;
+
+}
+
+.glow2{
+
+    width:300px;
+
+    height:300px;
+
+    background:#06b6d4;
+
+    right:-100px;
+
+    top:40px;
+
+    opacity:.25;
+
+}
+
+/* Badge */
+
+.hero-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    color:#fff;
+
+    padding:12px 20px;
+
+    border-radius:50px;
+
+    margin-bottom:30px;
+
+}
+
+.hero-badge i{
+
+    color:#06b6d4;
+
+}
+
+/* Heading */
+
+.hero h1{
+
+    font-size:62px;
+
+    line-height:1.1;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.hero h1 span{
+
+    display:block;
+
+    color:#3b82f6;
+
+}
+
+/* Paragraph */
+
+.hero p{
+
+    font-size:18px;
+
+    color:#cbd5e1;
+
+    margin-top:25px;
+
+    margin-bottom:40px;
+
+}
+
+/* Buttons */
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+/* Hero Card */
+
+.hero-card{
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:30px;
+
+    padding:35px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.35);
+
+}
+
+.hero-image{
+
+    animation:float 5s ease-in-out infinite;
+
+}
+
+/* Hover */
+
+.hero-card:hover{
+
+    transform:translateY(-10px);
+
+    transition:.4s;
+
+}

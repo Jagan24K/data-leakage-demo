@@ -234,9 +234,13 @@ NAVBAR
 
     border:none;
 
-    color:#fff;
+    color:#fff !important;
 
-    font-size:26px;
+}
+
+.navbar-toggler i{
+
+    color:#fff !important;
 
 }
 

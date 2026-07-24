@@ -60,6 +60,12 @@ RESPONSIVE.CSS
 
     }
 
+     .workflow-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
     .navbar{
 
         padding:15px 0;
@@ -379,6 +385,12 @@ RESPONSIVE.CSS
     .feature-card{
 
         padding:25px;
+
+    }
+
+    .workflow-grid{
+
+        grid-template-columns:1fr;
 
     }
 

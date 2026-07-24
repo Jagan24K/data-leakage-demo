@@ -1,4 +1,5 @@
-/*==================================================
+/*=====
+=============================================
 GOOGLE FONT
 ==================================================*/
 
@@ -191,6 +192,18 @@ NAVBAR
     backdrop-filter:blur(18px);
 
     border-bottom:1px solid rgba(255,255,255,.06);
+
+    --bs-navbar-color:#ffffff;
+
+    --bs-navbar-hover-color:#60A5FA;
+
+    --bs-navbar-active-color:#60A5FA;
+
+    --bs-navbar-brand-color:#ffffff;
+
+    --bs-navbar-brand-hover-color:#ffffff;
+
+    --bs-navbar-toggler-border-color:transparent;
 
 }
 

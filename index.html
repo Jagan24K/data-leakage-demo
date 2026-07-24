@@ -2,235 +2,450 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>CloudGuard | Secure Cloud Data Integrity Platform</title>
+    <title>Data Leakage Detection in Cloud Computing</title>
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description"
+        content="Cloud Data Integrity Auditing using Secure Network Coding Techniques with AES Encryption and Third Party Auditor.">
 
     <!-- Bootstrap -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Google Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <!-- CSS -->
+
     <link rel="stylesheet" href="css/style.css">
+
     <link rel="stylesheet" href="css/responsive.css">
+
 </head>
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
+    <!-- ========================= -->
+    <!-- NAVBAR -->
+    <!-- ========================= -->
 
-<nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+    <nav class="navbar navbar-expand-lg fixed-top">
 
-    <div class="container">
+        <div class="container">
 
-        <a class="navbar-brand" href="#">
-            <i class="fa-solid fa-shield-halved"></i>
-            CloudGuard
-        </a>
+            <a class="navbar-brand" href="#">
 
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+                <i class="fa-solid fa-shield-halved"></i>
 
-        <div class="collapse navbar-collapse" id="menu">
+                Cloud Integrity
 
-            <ul class="navbar-nav ms-auto">
+            </a>
 
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
-                </li>
+            <button class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#features">Features</a>
-                </li>
+                <i class="fa-solid fa-bars"></i>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#workflow">Workflow</a>
-                </li>
+            </button>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#screenshots">Screenshots</a>
-                </li>
+            <div class="collapse navbar-collapse"
+                id="navbarNav">
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#technology">Technology</a>
-                </li>
+                <ul class="navbar-nav ms-auto">
 
-            </ul>
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">Home</a>
+                    </li>
 
-        </div>
+                    <li class="nav-item">
+                        <a href="#features" class="nav-link">Features</a>
+                    </li>
 
-    </div>
+                    <li class="nav-item">
+                        <a href="#workflow" class="nav-link">Workflow</a>
+                    </li>
 
-</nav>
+                    <li class="nav-item">
+                        <a href="#demo" class="nav-link">Demo</a>
+                    </li>
 
-<!-- ================= HERO ================= -->
+                    <li class="nav-item">
+                        <a href="#architecture" class="nav-link">Architecture</a>
+                    </li>
 
-<!-- ================= HERO ================= -->
+                    <li class="nav-item">
+                        <a href="#technology" class="nav-link">Technology</a>
+                    </li>
 
-<section class="hero">
+                    <li class="nav-item">
+                        <a href="#github" class="nav-link">GitHub</a>
+                    </li>
 
-    <div class="hero-grid"></div>
-
-    <div class="glow glow1"></div>
-    <div class="glow glow2"></div>
-
-    <div class="container">
-
-        <div class="row align-items-center">
-
-            <div class="col-lg-6">
-
-                <span class="hero-badge">
-                    <i class="fa-solid fa-shield-halved"></i>
-                    MCA Final Year Project
-                </span>
-
-                <h1>
-                    Data Leakage Detection
-                    <span>in Cloud Computing</span>
-                </h1>
-
-                <p>
-
-                    A secure cloud storage platform that protects files using
-                    AES Encryption, Secure Network Coding, Trapdoor Generation,
-                    and Third Party Auditing to detect unauthorized modifications
-                    and data leakage.
-
-                </p>
-
-                <div class="hero-buttons">
-
-                    <a href="#demo" class="btn btn-primary btn-lg">
-
-                        <i class="fa-solid fa-play"></i>
-
-                        Explore Demo
-
-                    </a>
-
-                    <a href="https://github.com/Jagan24K/Data-Leakage-Detection-in-Cloud-Computing"
-                        target="_blank"
-                        class="btn btn-outline-light btn-lg">
-
-                        <i class="fab fa-github"></i>
-
-                        GitHub
-
-                    </a>
-
-                </div>
-
-            </div>
-
-            <div class="col-lg-6">
-
-                <div class="hero-card">
-
-                    <img src="assets/images/hero.jpg"
-                         class="img-fluid hero-image"
-                         alt="Cloud Data Security Illustration">
-
-                </div>
+                </ul>
 
             </div>
 
         </div>
 
-    </div>
+    </nav>
 
-</section>
+    <!-- ========================= -->
+    <!-- HERO -->
+    <!-- ========================= -->
 
-<!-- ================= SECURITY STATUS ================= -->
+    <section class="hero" id="home">
 
-<section class="security-status">
+        <div class="hero-grid"></div>
+
+        <div class="glow1"></div>
+
+        <div class="glow2"></div>
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+
+                    <span class="hero-badge">
+
+                        <i class="fa-solid fa-shield"></i>
+
+                        Secure Cloud Computing
+
+                    </span>
+
+                    <h1>
+
+                        Data Leakage Detection
+
+                        <span>in Cloud Computing</span>
+
+                    </h1>
+
+                    <p>
+
+                        A secure cloud auditing platform that protects
+                        uploaded files using AES Encryption,
+                        Trapdoor Generation,
+                        Third Party Auditing,
+                        and Integrity Verification.
+
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#demo"
+                            class="btn btn-primary">
+
+                            Live Demo
+
+                        </a>
+
+                        <a href="#features"
+                            class="btn btn-outline-light">
+
+                            Learn More
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <div class="hero-card">
+
+                        <img src="images/cloud-security.png"
+                            class="img-fluid"
+                            alt="Cloud Security">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- SECURITY STATUS -->
+    <!-- ========================= -->
+
+    <section class="security-status">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="status-card">
+
+                        <div class="status-top">
+
+                            <span class="status-dot"></span>
+
+                            Encryption
+
+                        </div>
+
+                        <h3>AES-256</h3>
+
+                        <p>Active Protection</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="status-card">
+
+                        <div class="status-top">
+
+                            <span class="status-dot"></span>
+
+                            TPA
+
+                        </div>
+
+                        <h3>ONLINE</h3>
+
+                        <p>Auditing Enabled</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="status-card">
+
+                        <div class="status-top">
+
+                            <span class="status-dot"></span>
+
+                            Trapdoor
+
+                        </div>
+
+                        <h3>READY</h3>
+
+                        <p>Generated Successfully</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="status-card">
+
+                        <div class="status-top">
+
+                            <span class="status-dot"></span>
+
+                            Integrity
+
+                        </div>
+
+                        <h3>100%</h3>
+
+                        <p>No Tampering Detected</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FEATURES SECTION STARTS BELOW -->
+
+    <!-- ========================= -->
+<!-- FEATURES -->
+<!-- ========================= -->
+
+<section class="features" id="features">
 
     <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="section-tag">
+
+                CORE FEATURES
+
+            </span>
+
+            <h2 class="section-title">
+
+                Powerful Security Features
+
+            </h2>
+
+            <p class="section-subtitle">
+
+                Protecting cloud data using encryption, auditing,
+                integrity verification and attack detection.
+
+            </p>
+
+        </div>
 
         <div class="row g-4">
 
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-4">
 
-                <div class="status-card">
+                <div class="feature-card">
 
-                    <div class="status-top">
+                    <div class="feature-icon">
 
-                        <span class="status-dot"></span>
-
-                        <span>Encryption</span>
+                        <i class="fa-solid fa-lock"></i>
 
                     </div>
 
-                    <h3>AES-256</h3>
+                    <h4>AES Encryption</h4>
 
-                    <p>Secure & Active</p>
+                    <p>
+
+                        Uploaded files are encrypted using AES
+                        before storing them in the cloud.
+
+                    </p>
 
                 </div>
 
             </div>
 
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-4">
 
-                <div class="status-card">
+                <div class="feature-card">
 
-                    <div class="status-top">
+                    <div class="feature-icon">
 
-                        <span class="status-dot"></span>
-
-                        <span>Third Party Auditor</span>
+                        <i class="fa-solid fa-key"></i>
 
                     </div>
 
-                    <h3>ONLINE</h3>
+                    <h4>Trapdoor Generation</h4>
 
-                    <p>Integrity Verified</p>
+                    <p>
+
+                        A secure trapdoor is generated for every
+                        uploaded file to support auditing.
+
+                    </p>
 
                 </div>
 
             </div>
 
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-4">
 
-                <div class="status-card">
+                <div class="feature-card">
 
-                    <div class="status-top">
+                    <div class="feature-icon">
 
-                        <span class="status-dot"></span>
-
-                        <span>Trapdoor</span>
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
 
                     </div>
 
-                    <h3>READY</h3>
+                    <h4>Secure Cloud Upload</h4>
 
-                    <p>Generated Successfully</p>
+                    <p>
+
+                        Files are uploaded safely while maintaining
+                        confidentiality and integrity.
+
+                    </p>
 
                 </div>
 
             </div>
 
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-4">
 
-                <div class="status-card">
+                <div class="feature-card">
 
-                    <div class="status-top">
+                    <div class="feature-icon">
 
-                        <span class="status-dot"></span>
-
-                        <span>Integrity</span>
+                        <i class="fa-solid fa-user-shield"></i>
 
                     </div>
 
-                    <h3>100%</h3>
+                    <h4>Third Party Auditor</h4>
 
-                    <p>No Tampering Detected</p>
+                    <p>
+
+                        Independent auditing verifies stored files
+                        without revealing original data.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+
+                        <i class="fa-solid fa-bug"></i>
+
+                    </div>
+
+                    <h4>Attack Detection</h4>
+
+                    <p>
+
+                        Detects malicious file modifications and
+                        unauthorized cloud activities.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+
+                        <i class="fa-solid fa-file-shield"></i>
+
+                    </div>
+
+                    <h4>Integrity Verification</h4>
+
+                    <p>
+
+                        Generates integrity reports ensuring every
+                        cloud file remains untampered.
+
+                    </p>
 
                 </div>
 
@@ -242,9 +457,677 @@
 
 </section>
 
+<!-- ========================= -->
+<!-- WORKFLOW -->
+<!-- ========================= -->
+
+<section class="workflow" id="workflow">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="section-tag">
+
+                WORKFLOW
+
+            </span>
+
+            <h2 class="section-title">
+
+                How The System Works
+
+            </h2>
+
+        </div>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <div class="timeline-icon">
+
+                    <i class="fa-solid fa-upload"></i>
+
+                </div>
+
+                <h5>Upload File</h5>
+
+                <p>User uploads the file securely.</p>
+
+            </div>
+
+            <div class="timeline-arrow">
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-icon">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                </div>
+
+                <h5>AES Encryption</h5>
+
+                <p>File is encrypted before storage.</p>
+
+            </div>
+
+            <div class="timeline-arrow">
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-icon">
+
+                    <i class="fa-solid fa-key"></i>
+
+                </div>
+
+                <h5>Trapdoor</h5>
+
+                <p>Unique trapdoor generated.</p>
+
+            </div>
+
+            <div class="timeline-arrow">
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-icon">
+
+                    <i class="fa-solid fa-cloud"></i>
+
+                </div>
+
+                <h5>Cloud Storage</h5>
+
+                <p>Encrypted file stored safely.</p>
+
+            </div>
+
+            <div class="timeline-arrow">
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-icon">
+
+                    <i class="fa-solid fa-user-shield"></i>
+
+                </div>
+
+                <h5>TPA Audit</h5>
+
+                <p>Integrity verification begins.</p>
+
+            </div>
+
+            <div class="timeline-arrow">
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-icon">
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                </div>
+
+                <h5>Audit Report</h5>
+
+                <p>Integrity report is generated.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- LIVE DEMO -->
+<!-- ========================= -->
+
+<section class="demo-section" id="demo">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="section-tag">
+
+                LIVE DEMO
+
+            </span>
+
+            <h2 class="section-title">
+
+                Interactive Simulation
+
+            </h2>
+
+            <p class="section-subtitle">
+
+                Experience how the cloud auditing process works.
+
+            </p>
+
+        </div>
+
+        <div class="demo-box">
+
+            <div class="row">
+
+                <div class="col-lg-6">
+
+                    <h4 class="mb-4">
+
+                        Simulate Cloud Upload
+
+                    </h4>
+
+                    <input
+                        type="text"
+                        id="fileName"
+                        class="form-control mb-3"
+                        placeholder="Enter File Name">
+
+                    <button
+                        class="btn btn-primary w-100"
+                        id="uploadBtn">
+
+                        Upload Securely
+
+                    </button>
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <h4 class="mb-4">
+
+                        System Output
+
+                    </h4>
+
+                    <div
+                        id="demoOutput"
+                        class="terminal">
+
+                        Waiting for upload...
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- ARCHITECTURE STARTS BELOW -->
+
+<!-- ========================= -->
+<!-- ARCHITECTURE -->
+<!-- ========================= -->
+
+<section class="architecture" id="architecture">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="section-tag">
+                SYSTEM ARCHITECTURE
+            </span>
+
+            <h2 class="section-title">
+                Overall Architecture
+            </h2>
+
+            <p class="section-subtitle">
+
+                The complete workflow showing interactions between
+                Cloud User, Cloud Server, Third Party Auditor and
+                Attacker Simulation.
+
+            </p>
+
+        </div>
+
+        <div class="architecture-box">
+
+            <div class="row text-center">
+
+                <div class="col-lg-3">
+
+                    <div class="architecture-card">
+
+                        <i class="fa-solid fa-user fa-3x"></i>
+
+                        <h4>Cloud User</h4>
+
+                        <p>
+
+                            Register, Login,
+                            Upload Files,
+                            Download Files
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <div class="architecture-card">
+
+                        <i class="fa-solid fa-cloud fa-3x"></i>
+
+                        <h4>Cloud Server</h4>
+
+                        <p>
+
+                            AES Encryption,
+                            Trapdoor Generation,
+                            Secure Storage
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <div class="architecture-card">
+
+                        <i class="fa-solid fa-user-shield fa-3x"></i>
+
+                        <h4>Third Party Auditor</h4>
+
+                        <p>
+
+                            Integrity Verification,
+                            Audit Request,
+                            Report Generation
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <div class="architecture-card">
+
+                        <i class="fa-solid fa-user-secret fa-3x"></i>
+
+                        <h4>Attacker</h4>
+
+                        <p>
+
+                            Simulated Attack,
+                            File Modification,
+                            Tampering Detection
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- SCREENSHOTS -->
+<!-- ========================= -->
+
+<section class="screenshots">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="section-tag">
+
+                PROJECT MODULES
+
+            </span>
+
+            <h2 class="section-title">
+
+                Application Screens
+
+            </h2>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-4">
+
+                <div class="gallery-card">
+
+                    <img src="images/login.png"
+                        class="img-fluid">
+
+                    <h5>Login</h5>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="gallery-card">
+
+                    <img src="images/upload.png"
+                        class="img-fluid">
+
+                    <h5>File Upload</h5>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="gallery-card">
+
+                    <img src="images/audit.png"
+                        class="img-fluid">
+
+                    <h5>Audit Module</h5>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="gallery-card">
+
+                    <img src="images/report.png"
+                        class="img-fluid">
+
+                    <h5>Integrity Report</h5>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="gallery-card">
+
+                    <img src="images/cloud.png"
+                        class="img-fluid">
+
+                    <h5>Cloud Storage</h5>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="gallery-card">
+
+                    <img src="images/attack.png"
+                        class="img-fluid">
+
+                    <h5>Attack Detection</h5>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- TECHNOLOGY -->
+<!-- ========================= -->
+
+<section class="technology" id="technology">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="section-tag">
+
+                TECHNOLOGY STACK
+
+            </span>
+
+            <h2 class="section-title">
+
+                Technologies Used
+
+            </h2>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-2 col-md-4 col-6">
+
+                <div class="tech-card">
+
+                    <i class="fa-brands fa-java"></i>
+
+                    <h6>Java</h6>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+
+                <div class="tech-card">
+
+                    <i class="fa-solid fa-database"></i>
+
+                    <h6>MySQL</h6>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+
+                <div class="tech-card">
+
+                    <i class="fa-brands fa-html5"></i>
+
+                    <h6>HTML5</h6>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+
+                <div class="tech-card">
+
+                    <i class="fa-brands fa-css3-alt"></i>
+
+                    <h6>CSS3</h6>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+
+                <div class="tech-card">
+
+                    <i class="fa-brands fa-bootstrap"></i>
+
+                    <h6>Bootstrap</h6>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+
+                <div class="tech-card">
+
+                    <i class="fa-solid fa-server"></i>
+
+                    <h6>GlassFish</h6>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- GITHUB -->
+<!-- ========================= -->
+
+<section class="github" id="github">
+
+    <div class="container">
+
+        <div class="github-box text-center">
+
+            <i class="fa-brands fa-github fa-4x mb-4"></i>
+
+            <h2>
+
+                View Source Code
+
+            </h2>
+
+            <p>
+
+                Explore the original Java implementation
+                of the project on GitHub.
+
+            </p>
+
+            <a
+                href="https://github.com/Jagan24K/Data-Leakage-Detection-in-Cloud-Computing"
+                target="_blank"
+                class="btn btn-primary">
+
+                Open GitHub Repository
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-6">
+
+                <h3>
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    Cloud Integrity
+
+                </h3>
+
+                <p>
+
+                    Data Leakage Detection in Cloud Computing using
+                    AES Encryption,
+                    Secure Network Coding,
+                    and Third Party Auditing.
+
+                </p>
+
+            </div>
+
+            <div class="col-lg-6 text-lg-end">
+
+                <p>
+
+                    © 2026 All Rights Reserved
+
+                </p>
+
+                <p>
+
+                    MCA Final Year Project
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- Bootstrap -->
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JavaScript -->
 
 <script src="js/app.js"></script>
 
 </body>
+
 </html>
+
+
+    

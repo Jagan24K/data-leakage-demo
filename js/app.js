@@ -63,6 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const output = document.getElementById("demoOutput");
 
     const fileInput = document.getElementById("fileInput");
+    const removeBtn=document.getElementById("removeBtn");
     const chooseBtn = document.getElementById("chooseBtn");
     const selectedFile = document.getElementById("selectedFile");
     
@@ -76,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
         if(fileInput.files.length){
     
-            selectedFile.innerHTML=fileInput.files[0].name;
+            selectedFile.innerHTML="<i class='fa-solid fa-file'></i> "+fileInput.files[0].name;
     
         }else{
     
@@ -84,6 +85,14 @@ document.addEventListener("DOMContentLoaded", function () {
     
         }
     
+    });
+
+    removeBtn.addEventListener("click",()=>{
+
+    fileInput.value="";
+
+    selectedFile.innerHTML="No file selected";
+
     });
 
     if (uploadBtn) {

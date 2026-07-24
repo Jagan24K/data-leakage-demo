@@ -1,187 +1,577 @@
+/*==================================================
+RESPONSIVE.CSS
+==================================================*/
 
-/* ==========================================
-   RESPONSIVE DESIGN
-========================================== */
+/*==================================================
+1400px
+==================================================*/
 
-/* Large Devices (≤1200px) */
+@media (max-width:1400px){
+
+    .hero h1{
+
+        font-size:60px;
+
+    }
+
+}
+
+/*==================================================
+1200px
+==================================================*/
+
 @media (max-width:1200px){
 
     .hero h1{
-        font-size:56px;
+
+        font-size:54px;
+
     }
 
-    .hero h2{
-        font-size:48px;
+    .section-title{
+
+        font-size:42px;
+
+    }
+
+    .timeline{
+
+        gap:15px;
+
+    }
+
+    .timeline-item{
+
+        width:160px;
+
     }
 
 }
 
-/* Medium Devices (≤992px) */
+/*==================================================
+992px
+==================================================*/
+
 @media (max-width:992px){
 
+    section{
+
+        padding:80px 0;
+
+    }
+
     .navbar{
-        background:#0b1220;
-        backdrop-filter:blur(15px);
+
+        padding:15px 0;
+
     }
 
-    .navbar-nav{
+    .navbar-collapse{
+
+        background:#08101F;
+
         margin-top:20px;
-        text-align:center;
+
+        border-radius:15px;
+
+        padding:20px;
+
+        border:1px solid rgba(255,255,255,.08);
+
     }
 
-    .nav-link{
-        margin:12px 0;
+    .navbar-nav .nav-link{
+
+        margin-left:0;
+
+        padding:12px 0;
+
     }
 
     .hero{
+
         padding-top:120px;
+
         text-align:center;
+
     }
 
     .hero h1{
-        font-size:48px;
-    }
 
-    .hero h2{
-        font-size:38px;
+        font-size:48px;
+
     }
 
     .hero p{
+
         margin:auto;
-        font-size:17px;
+
+        margin-bottom:35px;
+
     }
 
-    .hero-image{
-        width:80%;
-        margin-top:50px;
+    .hero-buttons{
+
+        justify-content:center;
+
+        margin-bottom:50px;
+
     }
 
-    .btn{
-        margin-bottom:15px;
-    }
+    .hero-card{
 
-    .stats{
-        padding-top:30px;
+        max-width:600px;
+
+        margin:auto;
+
     }
 
     .section-title{
-        font-size:36px;
+
+        font-size:38px;
+
+    }
+
+    .architecture-card{
+
+        margin-bottom:25px;
+
+    }
+
+    footer{
+
+        text-align:center;
+
+    }
+
+    footer .text-lg-end{
+
+        text-align:center !important;
+
+        margin-top:30px;
+
     }
 
 }
 
-/* Small Devices (≤768px) */
+     /*==================================================
+768px
+==================================================*/
+
 @media (max-width:768px){
 
+    section{
+
+        padding:70px 0;
+
+    }
+
     .hero{
+
         min-height:auto;
-        padding:120px 0 60px;
+
+        padding-top:110px;
+
+        padding-bottom:70px;
+
     }
 
     .hero h1{
-        font-size:40px;
-    }
 
-    .hero h2{
-        font-size:30px;
+        font-size:40px;
+
+        line-height:1.25;
+
     }
 
     .hero p{
-        font-size:16px;
-        line-height:1.7;
+
+        font-size:17px;
+
     }
 
-    .hero-image{
-        width:90%;
-        margin-top:40px;
+    .hero-buttons{
+
+        flex-direction:column;
+
+        align-items:center;
+
     }
 
-    .stat-card{
-        padding:30px 20px;
-    }
+    .hero-buttons .btn{
 
-    .stat-card h3{
-        font-size:28px;
+        width:100%;
+
+        max-width:320px;
+
     }
 
     .section-title{
-        font-size:32px;
+
+        font-size:34px;
+
     }
 
     .section-subtitle{
-        font-size:15px;
-        padding:0 15px;
+
+        font-size:16px;
+
+    }
+
+    .status-card{
+
+        padding:25px;
+
+    }
+
+    .feature-card{
+
+        padding:30px;
+
+    }
+
+    .feature-card h4{
+
+        font-size:22px;
+
+    }
+
+    .feature-icon{
+
+        width:65px;
+
+        height:65px;
+
+    }
+
+    .feature-icon i{
+
+        font-size:26px;
+
+    }
+
+    /* Timeline */
+
+    .timeline{
+
+        flex-direction:column;
+
+    }
+
+    .timeline-item{
+
+        width:100%;
+
+        max-width:380px;
+
+        min-height:auto;
+
+    }
+
+    .timeline-arrow{
+
+        transform:rotate(90deg);
+
+        font-size:28px;
+
+        margin:5px 0;
+
+    }
+
+    /* Demo */
+
+    .demo-box{
+
+        padding:30px;
+
+    }
+
+    .terminal{
+
+        margin-top:30px;
+
+        min-height:220px;
+
+    }
+
+    /* Architecture */
+
+    .architecture-box{
+
+        padding:35px 25px;
+
+    }
+
+    .architecture-card{
+
+        margin-bottom:25px;
+
+    }
+
+    /* Gallery */
+
+    .gallery-card img{
+
+        height:220px;
+
+    }
+
+    /* Github */
+
+    .github-box{
+
+        padding:50px 30px;
+
+    }
+
+    .github-box h2{
+
+        font-size:34px;
+
     }
 
 }
 
-/* Extra Small Devices (≤576px) */
+/*==================================================
+576px
+==================================================*/
+
 @media (max-width:576px){
 
-    .navbar-brand{
-        font-size:22px;
-    }
-
     .hero h1{
+
         font-size:34px;
+
     }
 
-    .hero h2{
-        font-size:26px;
-    }
+    .hero-badge{
 
-    .hero p{
-        font-size:15px;
-    }
+        font-size:13px;
 
-    .btn{
-        width:100%;
-        margin-bottom:15px;
-    }
+        padding:8px 16px;
 
-    .btn + .btn{
-        margin-left:0 !important;
-    }
-
-    .hero-image{
-        width:100%;
-    }
-
-    .stat-card{
-        margin-bottom:20px;
-    }
-
-    .stat-card i{
-        font-size:36px;
-    }
-
-    .stat-card h3{
-        font-size:24px;
-    }
-
-    section{
-        padding:70px 0;
-    }
-
-}
-
-/* Ultra Small Devices (≤400px) */
-@media (max-width:400px){
-
-    .hero h1{
-        font-size:30px;
-    }
-
-    .hero h2{
-        font-size:22px;
     }
 
     .hero p{
-        font-size:14px;
+
+        font-size:16px;
+
     }
 
     .section-title{
+
         font-size:28px;
+
+    }
+
+    .section-subtitle{
+
+        font-size:15px;
+
+    }
+
+    .status-card h3{
+
+        font-size:28px;
+
+    }
+
+    .feature-card{
+
+        padding:25px;
+
+    }
+
+    .timeline-item{
+
+        padding:20px;
+
+    }
+
+    .timeline-icon{
+
+        width:60px;
+
+        height:60px;
+
+        font-size:20px;
+
+    }
+
+    .demo-box{
+
+        padding:20px;
+
+    }
+
+    .architecture-box{
+
+        padding:20px;
+
+    }
+
+    .gallery-card img{
+
+        height:200px;
+
+    }
+
+    .tech-card{
+
+        padding:25px 10px;
+
+    }
+
+    .tech-card i{
+
+        font-size:42px;
+
+    }
+
+    .github-box{
+
+        padding:40px 20px;
+
+    }
+
+    .github-box h2{
+
+        font-size:28px;
+
+    }
+
+    .github-box p{
+
+        font-size:16px;
+
+    }
+
+    footer{
+
+        padding:45px 0;
+
+    }
+
+    footer h3{
+
+        font-size:24px;
+
+    }
+
+}
+
+/*==================================================
+400px
+==================================================*/
+
+@media (max-width:400px){
+
+    .hero{
+
+        padding-top:95px;
+
+    }
+
+    .hero h1{
+
+        font-size:30px;
+
+    }
+
+    .hero p{
+
+        font-size:15px;
+
+    }
+
+    .section-title{
+
+        font-size:25px;
+
+    }
+
+    .status-card{
+
+        padding:20px;
+
+    }
+
+    .status-card h3{
+
+        font-size:24px;
+
+    }
+
+    .feature-card{
+
+        padding:22px;
+
+    }
+
+    .feature-card h4{
+
+        font-size:20px;
+
+    }
+
+    .feature-card p{
+
+        font-size:14px;
+
+    }
+
+    .timeline-item h5{
+
+        font-size:18px;
+
+    }
+
+    .timeline-item p{
+
+        font-size:14px;
+
+    }
+
+    .terminal{
+
+        font-size:13px;
+
+    }
+
+    .gallery-card img{
+
+        height:180px;
+
+    }
+
+    .tech-card i{
+
+        font-size:36px;
+
+    }
+
+    .btn{
+
+        padding:12px 20px;
+
+        font-size:15px;
+
+    }
+
+}
+
+/*==================================================
+LANDSCAPE PHONES
+==================================================*/
+
+@media (max-height:500px) and (orientation:landscape){
+
+    .hero{
+
+        min-height:auto;
+
+        padding:120px 0 70px;
+
     }
 
 }

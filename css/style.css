@@ -686,23 +686,17 @@ WORKFLOW
 
 .timeline{
 
-    display:flex;
+    display:grid;
+
+    grid-template-columns:repeat(6,1fr);
 
     align-items:center;
 
-    justify-content:center;
-
-    flex-wrap:wrap;
-
-    gap:18px;
+    gap:20px;
 
 }
 
 .timeline-item{
-
-    width:170px;
-
-    min-height:220px;
 
     background:rgba(255,255,255,.05);
 
@@ -710,72 +704,21 @@ WORKFLOW
 
     border-radius:22px;
 
-    padding:25px;
+    padding:25px 18px;
 
     text-align:center;
 
     transition:.35s;
 
-}
-
-.timeline-item:hover{
-
-    transform:translateY(-10px);
-
-    border-color:#3B82F6;
-
-}
-
-.timeline-icon{
-
-    width:70px;
-
-    height:70px;
-
-    margin:auto;
-
-    margin-bottom:20px;
-
-    border-radius:50%;
-
-    background:#2563EB;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    color:#fff;
-
-    font-size:24px;
-
-}
-
-.timeline-item h5{
-
-    font-size:20px;
-
-    margin-bottom:12px;
-
-}
-
-.timeline-item p{
-
-    color:#94A3B8;
-
-    font-size:15px;
+    min-height:240px;
 
 }
 
 .timeline-arrow{
 
-    color:#60A5FA;
-
-    font-size:32px;
+    display:none;
 
 }
-
 /*==================================================
 DEMO
 ==================================================*/

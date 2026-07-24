@@ -1402,6 +1402,11 @@ END OF STYLE.CSS
     margin-bottom:25px;
 
 }
+#removeBtn{
+
+    margin-left:15px;
+
+}
 
 .selected-file{
 

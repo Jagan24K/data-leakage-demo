@@ -160,180 +160,141 @@ RESPONSIVE.CSS
 
 }
 
-     /*==================================================
+/*==================================================
 768px
 ==================================================*/
 
 @media (max-width:768px){
 
     section{
+        padding:65px 0;
+    }
 
-        padding:70px 0;
-
+    .container{
+        padding-left:20px;
+        padding-right:20px;
     }
 
     .hero{
-
         min-height:auto;
-
         padding-top:110px;
-
         padding-bottom:70px;
-
     }
 
     .hero h1{
-
         font-size:40px;
-
         line-height:1.25;
-
     }
 
     .hero p{
-
         font-size:17px;
-
     }
 
     .hero-buttons{
-
         flex-direction:column;
-
         align-items:center;
-
+        gap:15px;
     }
 
     .hero-buttons .btn{
-
         width:100%;
-
         max-width:320px;
-
     }
 
     .section-title{
-
         font-size:34px;
-
     }
 
     .section-subtitle{
-
         font-size:16px;
-
+        margin-bottom:35px;
     }
 
     .status-card{
-
         padding:25px;
-
     }
 
     .feature-card{
-
-        padding:30px;
-
+        padding:28px;
     }
 
     .feature-card h4{
-
         font-size:22px;
-
     }
 
     .feature-icon{
-
         width:65px;
-
         height:65px;
-
     }
 
     .feature-icon i{
-
         font-size:26px;
-
     }
 
-    /* Timeline */
-
-    .timeline{
-
-        flex-direction:column;
-
+    .workflow-grid{
+        grid-template-columns:1fr;
+        gap:20px;
     }
-
-    .timeline-item{
-
-        width:100%;
-
-        max-width:380px;
-
-        min-height:auto;
-
-    }
-
-    .timeline-arrow{
-
-        transform:rotate(90deg);
-
-        font-size:28px;
-
-        margin:5px 0;
-
-    }
-
-    /* Demo */
 
     .demo-box{
+        padding:25px;
+    }
 
-        padding:30px;
+    .upload-area{
+        padding:35px 20px;
+    }
 
+    .upload-area i{
+        font-size:60px;
+        margin-bottom:15px;
+    }
+
+    .upload-area h4{
+        font-size:32px;
+        margin-bottom:10px;
+    }
+
+    .upload-area p{
+        margin-bottom:20px;
+    }
+
+    #uploadBtn{
+        margin-top:25px;
+        margin-bottom:25px;
+    }
+
+    .demo-note-small{
+        margin:25px 0;
     }
 
     .terminal{
-
-        margin-top:30px;
-
-        min-height:220px;
-
+        margin-top:15px;
+        min-height:230px;
     }
 
-    /* Architecture */
+    .col-lg-6:last-child{
+        margin-top:40px;
+    }
 
     .architecture-box{
+        padding:30px 20px;
+    }
 
-        padding:35px 25px;
-
+    .architecture .row{
+        row-gap:25px;
     }
 
     .architecture-card{
-
-        margin-bottom:25px;
-
+        padding:30px 20px;
+        margin-bottom:0;
     }
-
-    /* Gallery */
 
     .gallery-card img{
-
         height:220px;
-
     }
-
-    /* Github */
 
     .github-box{
-
-        padding:50px 30px;
-
-    }
-
-    .github-box h2{
-
-        font-size:34px;
-
+        padding:45px 25px;
     }
 
 }
@@ -342,132 +303,83 @@ RESPONSIVE.CSS
 576px
 ==================================================*/
 
+/*==================================================
+576px
+==================================================*/
+
 @media (max-width:576px){
 
     .hero h1{
-
         font-size:34px;
-
     }
 
     .hero-badge{
-
         font-size:13px;
-
         padding:8px 16px;
-
     }
 
     .hero p{
-
         font-size:16px;
-
     }
 
     .section-title{
-
         font-size:28px;
-
     }
 
     .section-subtitle{
-
         font-size:15px;
-
     }
 
     .status-card h3{
-
         font-size:28px;
-
     }
 
     .feature-card{
-
-        padding:25px;
-
-    }
-
-    .workflow-grid{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .timeline-item{
-
-        padding:20px;
-
-    }
-
-    .timeline-icon{
-
-        width:60px;
-
-        height:60px;
-
-        font-size:20px;
-
+        padding:24px;
     }
 
     .demo-box{
-
-        padding:20px;
-
+        padding:18px;
     }
 
-    .architecture-box{
+    .upload-area{
+        padding:28px 18px;
+    }
 
-        padding:20px;
+    .upload-area h4{
+        font-size:28px;
+    }
 
+    .upload-area i{
+        font-size:52px;
     }
 
     .gallery-card img{
-
         height:200px;
+    }
 
+    .architecture-box{
+        padding:18px;
+    }
+
+    .architecture-card{
+        padding:25px 18px;
     }
 
     .tech-card{
-
-        padding:25px 10px;
-
+        padding:22px 10px;
     }
 
     .tech-card i{
-
         font-size:42px;
-
     }
 
     .github-box{
-
         padding:40px 20px;
-
-    }
-
-    .github-box h2{
-
-        font-size:28px;
-
-    }
-
-    .github-box p{
-
-        font-size:16px;
-
     }
 
     footer{
-
         padding:45px 0;
-
-    }
-
-    footer h3{
-
-        font-size:24px;
-
     }
 
 }

@@ -62,7 +62,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const output = document.getElementById("demoOutput");
 
-    const fileName = document.getElementById("fileName");
+    const fileInput = document.getElementById("fileInput");
+    const chooseBtn = document.getElementById("chooseBtn");
+    const selectedFile = document.getElementById("selectedFile");
+    
+    chooseBtn.addEventListener("click",()=>{
+    
+        fileInput.click();
+    
+    });
+    
+    fileInput.addEventListener("change",()=>{
+    
+        if(fileInput.files.length){
+    
+            selectedFile.innerHTML=fileInput.files[0].name;
+    
+        }else{
+    
+            selectedFile.innerHTML="No file selected";
+    
+        }
+    
+    });
 
     if (uploadBtn) {
 

@@ -1472,5 +1472,44 @@ END OF STYLE.CSS
 
 }
 
+/*=============================
+UPLOAD BUTTONS
+=============================*/
 
+.upload-buttons{
 
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    margin-top:20px;
+
+}
+
+.upload-buttons .btn{
+
+    flex:1;
+
+    min-width:170px;
+
+}
+
+@media(max-width:768px){
+
+.upload-buttons{
+
+    flex-direction:column;
+
+}
+
+.upload-buttons .btn{
+
+    width:100%;
+
+}
+
+}

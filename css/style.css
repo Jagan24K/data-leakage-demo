@@ -1424,17 +1424,15 @@ END OF STYLE.CSS
 
     display:flex;
 
+    gap:15px;
+
     align-items:flex-start;
 
-    gap:12px;
+    padding:18px;
 
-    margin-top:20px;
+    border-radius:14px;
 
-    padding:15px;
-
-    border-radius:12px;
-
-    background:rgba(96,165,250,.08);
+    background:#1E2638;
 
     border-left:4px solid #60A5FA;
 
@@ -1442,17 +1440,13 @@ END OF STYLE.CSS
 
 .demo-note-small i{
 
+   font-size:20px;
+
     color:#60A5FA;
-
-    font-size:18px;
-
-    margin-top:3px;
 
 }
 
 .demo-note-small strong{
-
-    color:#fff;
 
     display:block;
 
@@ -1466,9 +1460,9 @@ END OF STYLE.CSS
 
     color:#CBD5E1;
 
-    font-size:14px;
+    line-height:1.7;
 
-    line-height:1.6;
+    font-size:14px;
 
 }
 

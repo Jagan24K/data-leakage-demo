@@ -1,846 +1,394 @@
 /*==================================================
-RESPONSIVE.CSS
-Professional Responsive Layout
-Mobile First
-320px → 1440px
+  RESPONSIVE.CSS
 ==================================================*/
-
 
 /*==================================================
-1400px
+  1400px
 ==================================================*/
-
-@media (max-width:1400px){
-
-.hero h1{
-    font-size:60px;
+@media (max-width: 1400px) {
+  .hero h1 {
+    font-size: 60px;
+  }
 }
-
-.section-title{
-    font-size:42px;
-}
-
-.hero-card{
-    padding:28px;
-}
-
-}
-
-
 
 /*==================================================
-1200px
+  1200px
 ==================================================*/
+@media (max-width: 1200px) {
+  .hero h1 {
+    font-size: 54px;
+  }
 
-@media (max-width:1200px){
+  .section-title {
+    font-size: 42px;
+  }
 
-section{
-    padding:90px 0;
+  .timeline {
+    gap: 15px;
+  }
+
+  .timeline-item {
+    width: 160px;
+  }
 }
-
-.hero h1{
-    font-size:54px;
-}
-
-.hero p{
-    font-size:18px;
-}
-
-.section-title{
-    font-size:40px;
-}
-
-.timeline{
-    grid-template-columns:repeat(3,1fr);
-    gap:25px;
-}
-
-.hero-info{
-    right:0;
-}
-
-.gallery-card img{
-    height:240px;
-}
-
-}
-
-
 
 /*==================================================
-992px
+  992px
 ==================================================*/
+@media (max-width: 992px) {
+  section {
+    padding: 80px 0;
+  }
 
-@media (max-width:992px){
+  .workflow-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-section{
-    padding:80px 0;
+  .navbar {
+    padding: 15px 0;
+  }
+
+  .navbar-collapse {
+    background: #08101F;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .navbar-nav .nav-link {
+    margin-left: 0;
+    padding: 12px 0;
+  }
+
+  .hero {
+    padding-top: 120px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .hero p {
+    margin: auto;
+    margin-bottom: 35px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .hero-card {
+    max-width: 600px;
+    margin: auto;
+  }
+
+  .section-title {
+    font-size: 38px;
+  }
+
+  .architecture-card {
+    margin-bottom: 25px;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer .text-lg-end {
+    text-align: center !important;
+    margin-top: 30px;
+  }
 }
-
-.container{
-    padding-left:22px;
-    padding-right:22px;
-}
-
-/* NAVBAR */
-
-.navbar{
-    padding:15px 0;
-}
-
-.navbar-collapse{
-
-    margin-top:20px;
-
-    background:#08101F;
-
-    border-radius:18px;
-
-    padding:20px;
-
-    border:1px solid rgba(255,255,255,.08);
-
-}
-
-.navbar-nav{
-
-    align-items:flex-start;
-
-}
-
-.navbar-nav .nav-link{
-
-    margin-left:0;
-
-    padding:14px 0;
-
-}
-
-.navbar-nav .nav-link::after{
-
-    display:none;
-
-}
-
-
-/* HERO */
-
-.hero{
-
-    min-height:auto;
-
-    padding-top:120px;
-
-    padding-bottom:80px;
-
-    text-align:center;
-
-}
-
-.hero-content{
-
-    margin-bottom:60px;
-
-}
-
-.hero h1{
-
-    font-size:46px;
-
-}
-
-.hero p{
-
-    margin:auto;
-
-    margin-bottom:35px;
-
-}
-
-.hero-buttons{
-
-    justify-content:center;
-
-}
-
-.hero-card{
-
-    max-width:650px;
-
-    margin:auto;
-
-}
-
-.hero-info{
-
-    position:relative;
-
-    right:auto;
-
-    bottom:auto;
-
-    margin-top:25px;
-
-}
-
-
-/* GRID */
-
-.workflow-grid{
-
-    grid-template-columns:repeat(2,1fr);
-
-}
-
-.timeline{
-
-    grid-template-columns:repeat(2,1fr);
-
-}
-
-.architecture .row,
-.features .row,
-.security-status .row{
-
-    row-gap:25px;
-
-}
-
-.github-box{
-
-    padding:55px 35px;
-
-}
-
-footer{
-
-    text-align:center;
-
-}
-
-.social-links{
-
-    justify-content:center;
-
-    margin-top:25px;
-
-}
-
-}
-
-
 
 /*==================================================
-768px
-TABLETS
+  768px
 ==================================================*/
+@media (max-width: 768px) {
+  section {
+    padding: 65px 0;
+  }
 
-@media (max-width:768px){
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-section{
+  .hero {
+    min-height: auto;
+    padding-top: 110px;
+    padding-bottom: 70px;
+  }
 
-    padding:70px 0;
+  .hero h1 {
+    font-size: 40px;
+    line-height: 1.25;
+  }
 
+  .hero p {
+    font-size: 17px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .section-title {
+    font-size: 34px;
+  }
+
+  .section-subtitle {
+    font-size: 16px;
+    margin-bottom: 35px;
+  }
+
+  .status-card {
+    padding: 25px;
+  }
+
+  .feature-card {
+    padding: 28px;
+  }
+
+  .feature-card h4 {
+    font-size: 22px;
+  }
+
+  .feature-icon {
+    width: 65px;
+    height: 65px;
+  }
+
+  .feature-icon i {
+    font-size: 26px;
+  }
+
+  .workflow-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .demo-box {
+    padding: 25px;
+  }
+
+  .upload-area {
+    padding: 35px 20px;
+  }
+
+  .upload-area i {
+    font-size: 60px;
+    margin-bottom: 15px;
+  }
+
+  .upload-area h4 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .upload-area p {
+    margin-bottom: 20px;
+  }
+
+  #uploadBtn {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .demo-note-small {
+    margin: 25px 0;
+  }
+
+  .terminal {
+    margin-top: 15px;
+    min-height: 230px;
+  }
+
+  .col-lg-6:last-child {
+    margin-top: 40px;
+  }
+
+  .architecture-box {
+    padding: 30px 20px;
+  }
+
+  .architecture .row {
+    row-gap: 25px;
+  }
+
+  .architecture-card {
+    padding: 30px 20px;
+    margin-bottom: 0;
+  }
+
+  .gallery-card img {
+    height: 220px;
+  }
+
+  .github-box {
+    padding: 45px 25px;
+  }
 }
-
-.container{
-
-    padding-left:20px;
-
-    padding-right:20px;
-
-}
-
-/* HERO */
-
-.hero{
-
-    padding-top:110px;
-
-}
-
-.hero h1{
-
-    font-size:40px;
-
-    line-height:1.25;
-
-}
-
-.hero p{
-
-    font-size:17px;
-
-}
-
-.hero-buttons{
-
-    flex-direction:column;
-
-    align-items:center;
-
-}
-
-.hero-buttons .btn{
-
-    width:100%;
-
-    max-width:330px;
-
-}
-
-/* TITLES */
-
-.section-title{
-
-    font-size:34px;
-
-}
-
-.section-subtitle{
-
-    font-size:16px;
-
-    margin-bottom:40px;
-
-}
-
-/* CARDS */
-
-.status-card,
-.feature-card,
-.workflow-card,
-.architecture-card{
-
-    padding:28px;
-
-}
-
-.workflow-grid{
-
-    grid-template-columns:1fr;
-
-}
-
-.timeline{
-
-    grid-template-columns:1fr;
-
-}
-
-/* DEMO */
-
-.demo-box{
-
-    padding:28px;
-
-}
-
-.upload-area{
-
-    padding:35px 22px;
-
-}
-
-.upload-area h4{
-
-    font-size:28px;
-
-}
-
-.upload-area i{
-
-    font-size:54px;
-
-}
-
-.upload-buttons{
-
-    flex-direction:column;
-
-    align-items:center;
-
-    gap:15px;
-
-}
-
-.upload-buttons .btn{
-
-    width:100%;
-
-    max-width:320px;
-
-    margin:0;
-
-}
-
-#chooseBtn,
-#removeBtn{
-
-    margin:0 !important;
-
-}
-
-#uploadBtn{
-
-    margin-top:25px;
-
-}
-
-.demo-note-small{
-
-    margin-top:25px;
-
-}
-
-.terminal{
-
-    margin-top:35px;
-
-    min-height:320px;
-
-}
-
-.col-lg-6:last-child{
-
-    margin-top:35px;
-
-}
-
-/* ARCHITECTURE */
-
-.architecture-box{
-
-    padding:30px 20px;
-
-}
-
-/* GALLERY */
-
-.gallery-card img{
-
-    height:220px;
-
-}
-
-/* GITHUB */
-
-.github-box{
-
-    padding:45px 25px;
-
-}
-
-}
-
-
 
 /*==================================================
-576px
+  576px
 ==================================================*/
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 34px;
+  }
 
-@media (max-width:576px){
+  .hero-badge {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
 
-.hero{
+  .hero p {
+    font-size: 16px;
+  }
 
-    padding-top:100px;
+  .section-title {
+    font-size: 28px;
+  }
 
+  .section-subtitle {
+    font-size: 15px;
+  }
+
+  .status-card h3 {
+    font-size: 28px;
+  }
+
+  .feature-card {
+    padding: 24px;
+  }
+
+  .demo-box {
+    padding: 18px;
+  }
+
+  .upload-area {
+    padding: 28px 18px;
+  }
+
+  .upload-area h4 {
+    font-size: 28px;
+  }
+
+  .upload-area i {
+    font-size: 52px;
+  }
+
+  .gallery-card img {
+    height: 200px;
+  }
+
+  .architecture-box {
+    padding: 18px;
+  }
+
+  .architecture-card {
+    padding: 25px 18px;
+  }
+
+  .tech-card {
+    padding: 22px 10px;
+  }
+
+  .tech-card i {
+    font-size: 42px;
+  }
+
+  .github-box {
+    padding: 40px 20px;
+  }
+
+  footer {
+    padding: 45px 0;
+  }
 }
-
-.hero h1{
-
-    font-size:34px;
-
-}
-
-.hero p{
-
-    font-size:16px;
-
-}
-
-.hero-badge{
-
-    font-size:13px;
-
-    padding:8px 16px;
-
-}
-
-.section-title{
-
-    font-size:28px;
-
-}
-
-.section-subtitle{
-
-    font-size:15px;
-
-}
-
-.status-card h3{
-
-    font-size:28px;
-
-}
-
-.feature-card h4{
-
-    font-size:22px;
-
-}
-
-.demo-box{
-
-    padding:20px;
-
-}
-
-.upload-area{
-
-    padding:28px 18px;
-
-}
-
-.upload-area h4{
-
-    font-size:24px;
-
-}
-
-.upload-area p{
-
-    font-size:15px;
-
-}
-
-.upload-buttons{
-
-    width:100%;
-
-}
-
-.upload-buttons .btn{
-
-    width:100%;
-
-    max-width:100%;
-
-}
-
-.terminal{
-
-    min-height:260px;
-
-    font-size:14px;
-
-    padding:20px;
-
-}
-
-.gallery-card img{
-
-    height:190px;
-
-}
-
-.tech-card{
-
-    padding:28px 15px;
-
-}
-
-.tech-card i{
-
-    font-size:46px;
-
-}
-
-.github-box{
-
-    padding:35px 20px;
-
-}
-
-footer{
-
-    padding:50px 0 35px;
-
-}
-
-}
-
-
 
 /*==================================================
-430px
+  400px
 ==================================================*/
+@media (max-width: 400px) {
+  .hero {
+    padding-top: 95px;
+  }
 
-@media (max-width:430px){
+  .hero h1 {
+    font-size: 30px;
+  }
 
-.hero h1{
+  .hero p {
+    font-size: 15px;
+  }
 
-    font-size:31px;
+  .section-title {
+    font-size: 25px;
+  }
 
+  .status-card {
+    padding: 20px;
+  }
+
+  .status-card h3 {
+    font-size: 24px;
+  }
+
+  .feature-card {
+    padding: 22px;
+  }
+
+  .feature-card h4 {
+    font-size: 20px;
+  }
+
+  .feature-card p {
+    font-size: 14px;
+  }
+
+  .timeline-item h5 {
+    font-size: 18px;
+  }
+
+  .timeline-item p {
+    font-size: 14px;
+  }
+
+  .terminal {
+    font-size: 13px;
+  }
+
+  .gallery-card img {
+    height: 180px;
+  }
+
+  .tech-card i {
+    font-size: 36px;
+  }
+
+  .btn {
+    padding: 12px 20px;
+    font-size: 15px;
+  }
 }
-
-.section-title{
-
-    font-size:26px;
-
-}
-
-.btn{
-
-    font-size:15px;
-
-}
-
-.hero-buttons .btn{
-
-    width:100%;
-
-}
-
-.upload-area{
-
-    padding:25px 16px;
-
-}
-
-.demo-note-small{
-
-    flex-direction:column;
-
-    text-align:left;
-
-}
-
-.demo-note-small i{
-
-    margin-bottom:5px;
-
-}
-
-}
-
-
 
 /*==================================================
-390px
+  LANDSCAPE PHONES
 ==================================================*/
-
-@media (max-width:390px){
-
-.hero h1{
-
-    font-size:29px;
-
-}
-
-.hero p{
-
-    font-size:15px;
-
-}
-
-.section-title{
-
-    font-size:24px;
-
-}
-
-.status-card{
-
-    padding:22px;
-
-}
-
-.feature-card{
-
-    padding:22px;
-
-}
-
-.workflow-card{
-
-    padding:24px;
-
-}
-
-.architecture-card{
-
-    padding:24px 18px;
-
-}
-
-.gallery-card img{
-
-    height:175px;
-
-}
-
-.tech-card i{
-
-    font-size:40px;
-
-}
-
-}
-
-
-
-/*==================================================
-360px
-==================================================*/
-
-@media (max-width:360px){
-
-.container{
-
-    padding-left:16px;
-
-    padding-right:16px;
-
-}
-
-.hero{
-
-    padding-top:95px;
-
-}
-
-.hero h1{
-
-    font-size:27px;
-
-}
-
-.hero p{
-
-    font-size:14px;
-
-}
-
-.section-title{
-
-    font-size:22px;
-
-}
-
-.section-tag{
-
-    font-size:12px;
-
-}
-
-.upload-area{
-
-    padding:22px 14px;
-
-}
-
-.upload-area i{
-
-    font-size:46px;
-
-}
-
-.upload-area h4{
-
-    font-size:22px;
-
-}
-
-.demo-box{
-
-    padding:16px;
-
-}
-
-.btn{
-
-    min-height:52px;
-
-    padding:12px 18px;
-
-}
-
-.gallery-card img{
-
-    height:165px;
-
-}
-
-}
-
-
-
-/*==================================================
-320px
-==================================================*/
-
-@media (max-width:320px){
-
-.hero h1{
-
-    font-size:24px;
-
-}
-
-.hero p{
-
-    font-size:13px;
-
-}
-
-.section-title{
-
-    font-size:20px;
-
-}
-
-.upload-area{
-
-    padding:20px 12px;
-
-}
-
-.btn{
-
-    font-size:14px;
-
-}
-
-.terminal{
-
-    font-size:13px;
-
-}
-
-}
-
-
-
-/*==================================================
-LANDSCAPE PHONES
-==================================================*/
-
-@media (max-height:550px) and (orientation:landscape){
-
-.hero{
-
-    min-height:auto;
-
-    padding:120px 0 80px;
-
-}
-
-.hero-buttons{
-
-    flex-direction:row;
-
-}
-
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    min-height: auto;
+    padding: 120px 0 70px;
+  }
 }

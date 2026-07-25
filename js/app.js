@@ -58,133 +58,200 @@ document.addEventListener("DOMContentLoaded", function () {
     LIVE DEMO
     ==============================================*/
 
-    const uploadBtn = document.getElementById("uploadBtn");
+    /*==============================================
+LIVE DEMO
+==============================================*/
 
-    const output = document.getElementById("demoOutput");
-
-    const fileInput = document.getElementById("fileInput");
-    const removeBtn=document.getElementById("removeBtn");
-    const chooseBtn = document.getElementById("chooseBtn");
-    const selectedFile = document.getElementById("selectedFile");
-    
-    chooseBtn.addEventListener("click",()=>{
-    
-        fileInput.click();
-    
-    });
-    
-    fileInput.addEventListener("change",()=>{
-    
-        if(fileInput.files.length){
-    
-            selectedFile.innerHTML="<i class='fa-solid fa-file'></i> "+fileInput.files[0].name;
-    
-        }else{
-    
-            selectedFile.innerHTML="No file selected";
-    
-        }
-    
-    });
-
-    removeBtn.addEventListener("click",()=>{
-
-    fileInput.value="";
-
-    selectedFile.innerHTML="No file selected";
-
-    });
-
-    if (uploadBtn) {
-
-        uploadBtn.addEventListener("click", function () {
-
-            if(fileInput.files.length===0){
-
-            alert("Please choose a file.");
+        const uploadBtn = document.getElementById("uploadBtn");
+        const output = document.getElementById("demoOutput");
         
-            return;
+        const progressBar = document.getElementById("progressBar");
+        const progressPercent = document.getElementById("progressPercent");
         
-        }
+        const fileInput = document.getElementById("fileInput");
+        const removeBtn = document.getElementById("removeBtn");
+        const chooseBtn = document.getElementById("chooseBtn");
+        const selectedFile = document.getElementById("selectedFile");
         
-        let file=fileInput.files[0].name;
-
-            uploadBtn.disabled = true;
-
-            output.innerHTML = "Initializing Secure Upload...";
-
-            const logs = [
-
-                "Connecting to Cloud Server...",
-
-                "User Authentication Successful",
-
-                "Generating AES Encryption Key...",
-
-                "Encrypting File...",
-
-                "AES Encryption Completed",
-
-                "Generating Trapdoor...",
-
-                "Trapdoor Generated Successfully",
-
-                "Uploading Encrypted File...",
-
-                "Cloud Storage Successful",
-
-                "Sending Audit Request...",
-
-                "Third Party Auditor Connected",
-
-                "Verifying File Integrity...",
-
-                "Integrity Verification Successful",
-
-                "Generating Audit Report...",
-
-                "File Stored Securely",
-
-                "STATUS : SUCCESS"
-
-            ];
-
-            let i = 0;
-
-            output.innerHTML = "";
-
-            const interval = setInterval(function () {
-
-                output.innerHTML +=
-
-                    "<div>> " + logs[i] + "</div>";
-
-                output.scrollTop = output.scrollHeight;
-
-                i++;
-
-                if (i >= logs.length) {
-
-                    clearInterval(interval);
-
-                    output.innerHTML +=
-
-                        "<br><strong style='color:#22C55E;'>✔ " +
-
-                        file +
-
-                        " uploaded successfully.</strong>";
-
-                    uploadBtn.disabled = false;
-
-                }
-
-            }, 600);
-
+        chooseBtn.addEventListener("click", () => {
+        
+            fileInput.click();
+        
         });
-
-    }
-
+        
+        fileInput.addEventListener("change", () => {
+        
+            if (fileInput.files.length) {
+        
+                selectedFile.innerHTML =
+                    "<i class='fa-solid fa-file'></i> " +
+                    fileInput.files[0].name;
+        
+            } else {
+        
+                selectedFile.innerHTML = "No file selected";
+        
+            }
+        
+        });
+        
+        removeBtn.addEventListener("click", () => {
+        
+            fileInput.value = "";
+        
+            selectedFile.innerHTML = "No file selected";
+        
+        });
+        
+        const processingSteps = [
+        
+            "Initializing Secure Upload",
+        
+            "Reading selected file",
+        
+            "Validating file format",
+        
+            "Generating AES-256 Encryption Key",
+        
+            "AES Key Generated Successfully",
+        
+            "Encrypting file using AES-256",
+        
+            "Encryption Completed",
+        
+            "Generating SHA-256 Integrity Hash",
+        
+            "Integrity Hash Generated",
+        
+            "Generating Secure Trapdoor",
+        
+            "Trapdoor Generated Successfully",
+        
+            "Uploading encrypted file to cloud",
+        
+            "Encrypted File Uploaded",
+        
+            "Sending integrity request to Third Party Auditor",
+        
+            "Third Party Auditor Connected",
+        
+            "Verifying file integrity",
+        
+            "Integrity Verification Successful",
+        
+            "Generating Audit Report",
+        
+            "Secure Upload Completed"
+        
+        ];
+        
+        function delay(ms) {
+        
+            return new Promise(resolve => setTimeout(resolve, ms));
+        
+        }
+        
+        async function startSimulation(file) {
+        
+            output.innerHTML = "";
+        
+            progressBar.style.width = "0%";
+        
+            progressPercent.innerHTML = "0%";
+        
+            const total = processingSteps.length;
+        
+            const info = document.createElement("div");
+        
+            info.className = "log success";
+        
+            info.innerHTML =
+                "📄 Selected File : <strong>" + file.name + "</strong>";
+        
+            output.appendChild(info);
+        
+            const size = document.createElement("div");
+        
+            size.className = "log success";
+        
+            size.innerHTML =
+                "📦 File Size : <strong>" +
+                (file.size / 1024).toFixed(2) +
+                " KB</strong>";
+        
+            output.appendChild(size);
+        
+            output.scrollTop = output.scrollHeight;
+        
+            for (let i = 0; i < total; i++) {
+        
+                const row = document.createElement("div");
+        
+                row.className = "log pending";
+        
+                row.innerHTML = "⏳ " + processingSteps[i] + "...";
+        
+                output.appendChild(row);
+        
+                output.scrollTop = output.scrollHeight;
+        
+                await delay(1000);
+        
+                row.className = "log success";
+        
+                row.innerHTML = "✔ " + processingSteps[i];
+        
+                const percent = Math.round(((i + 1) / total) * 100);
+        
+                progressBar.style.width = percent + "%";
+        
+                progressPercent.innerHTML = percent + "%";
+        
+            }
+        
+            const finalMsg = document.createElement("div");
+        
+            finalMsg.className = "log success";
+        
+            finalMsg.style.marginTop = "18px";
+        
+            finalMsg.innerHTML =
+                "<strong>🎉 Upload Completed Successfully</strong>";
+        
+            output.appendChild(finalMsg);
+        
+            output.scrollTop = output.scrollHeight;
+        
+        }
+        
+        if (uploadBtn) {
+        
+            uploadBtn.addEventListener("click", async function () {
+        
+                if (fileInput.files.length === 0) {
+        
+                    alert("Please choose a file.");
+        
+                    return;
+        
+                }
+        
+                uploadBtn.disabled = true;
+        
+                uploadBtn.innerHTML =
+                    '<i class="fa-solid fa-spinner fa-spin"></i> Processing...';
+        
+                await startSimulation(fileInput.files[0]);
+        
+                uploadBtn.disabled = false;
+        
+                uploadBtn.innerHTML =
+                    '<i class="fa-solid fa-cloud-arrow-up"></i> Upload Securely';
+        
+            });
+        
+        }
+    
     /*==============================================
     ACTIVE NAV LINK
     ==============================================*/
